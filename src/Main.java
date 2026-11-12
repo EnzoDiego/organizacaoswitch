@@ -7,42 +7,31 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int numero;
+        String opcao;
 
-        System.out.println("Digite um numero: ");
-        numero = scanner.nextInt();
+        System.out.println("Digite uma opção:");
+        opcao = scanner.nextLine();
 
-        switch (numero) {
-            case 1:
-                System.out.println("janeiro");
+
+        switch (opcao) {
+            case "cadastrar":
+                System.out.println("Cadastro selecionado");
                 break;
 
-            case 2:
-                System.out.println("fevereiro");
+            case "consultar":
+                System.out.println("Consulta selecionada");
                 break;
 
-            case 3:
-                System.out.println("março");
+            case "excluir":
+                System.out.println("Exclusão selecionada");
                 break;
 
-            case 4:
-                System.out.println("abril");
-                break;
-
-            case 5:
-                System.out.println("maio");
-                break;
-
-            case 6:
-                System.out.println("junho");
-                break;
-
-            case 7 :
-                System.out.println("julho");
+            case "sair":
+                System.out.println("Programa encerrado");
                 break;
 
             default:
-                System.out.println("Mês inválido");
+                System.out.println("Opção inválida");
         }
     }
 }
