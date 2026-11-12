@@ -10,7 +10,7 @@ public class Main {
         String opcao;
 
         System.out.println("Digite uma opção:");
-        opcao = scanner.nextLine();
+        opcao = scanner.nextLine().toLowerCase();
 
 
         switch (opcao) {
